@@ -7,7 +7,7 @@ void main() {
 }
 
 class MunicipalTransitApp extends StatelessWidget {
-  const MunicipalTransitApp({Key? key}) : super(key: key);
+  const MunicipalTransitApp({super.key});
 
   @override
   Widget build(BuildContext context) {

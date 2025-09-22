@@ -6,9 +6,9 @@ class StopInfoCard extends StatelessWidget {
   final TransitStop stop;
 
   const StopInfoCard({
-    Key? key,
+    super.key,
     required this.stop,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -87,6 +87,13 @@ class StopInfoCard extends StatelessWidget {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
+                  const Text(
+                    'Arriving in',
+                    style: TextStyle(
+                      color: AppColors.white,
+                      fontSize: 14,
+                    ),
+                  ),
                   Text(
                     '${stop.arrivalTime}mins',
                     style: const TextStyle(

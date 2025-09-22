@@ -35,7 +35,7 @@ class CustomBottomNavigation extends StatelessWidget {
           label: 'Location',
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.star_outline),
+          icon: Icon(Icons.star_border_outlined),
           activeIcon: Icon(Icons.star),
           label: 'Favorites',
         ),
